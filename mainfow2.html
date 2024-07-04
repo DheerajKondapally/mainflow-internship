@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Webpage Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #444;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            main {
+                margin-top: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+
+         (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.2rem;
+            }
+
+            section p {
+                font-size: 0.9rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple Webpage</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a>
+                    <ul>
+                        <li><a href="#home-intro">Introduction</a></li>
+                        <li><a href="#home-news">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a>
+                    <ul>
+                        <li><a href="#about-company">Company</a></li>
+                        <li><a href="#about-team">Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="#services">Services</a>
+                    <ul>
+                        <li><a href="#web-design">Web Design</a></li>
+                        <li><a href="#seo">SEO</a></li>
+                        <li><a href="#marketing">Marketing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a>
+                    <ul>
+                        <li><a href="contactinfo.html">Contact Form</a></li>
+                        <li><a href="contact form.html">Contact Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of the webpage. Here you can find an introduction to the content.</p>
+            <article id="home-intro">
+                <h3>Introduction</h3>
+                <p>Welcome to our website! We are excited to have you here.</p>
+            </article>
+            <article id="home-news">
+                <h3>Latest News</h3>
+                <p>Stay updated with the latest news and updates from our site.</p>
+            </article>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This section provides information about the purpose of the webpage and its author.</p>
+            <article id="about-company">
+                <h3>Company</h3>
+                <p>Learn more about our company's mission and values.</p>
+            </article>
+            <article id="about-team">
+                <h3>Team</h3>
+                <p>Meet the team behind our success.</p>
+            </article>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <p>This section provides information about the services offered.</p>
+            <article id="web-design">
+                <h3>Web Design</h3>
+                <p>Details about web design services.</p>
+            </article>
+            <article id="seo">
+                <h3>SEO</h3>
+                <p>Details about SEO services.</p>
+            </article>
+            <article id="marketing">
+                <h3>Marketing</h3>
+                <p>Details about marketing services.</p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out through the contact information provided here.</p>
+            <article id="contact-form">
+                <h3>Contact Form</h3>
+                <p>Use our contact form to get in touch with us.</p>
+            </article>
+            <article id="contact-info">
+                <h3>Contact</h3>
+                <p>contact name<br>phone number<br>about</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Simple Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
