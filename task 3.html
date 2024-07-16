@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: url('https://imgs.search.brave.com/OLAMqwe56g4WHuP1NnvlM7mDsBD6tCz2tBC8NF-u43U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzgx/NDYuanBn') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(92, 99, 106, 0.9);
+            color: #0d0c0c;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: #552828;
+            text-align: center;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 83, 156, 0.9);
+            padding: 0;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+            text-align: center;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            border-bottom: 2px solid #00539C;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgba(4, 28, 76, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #00539C;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003f7f;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            main {
+                margin-top: 10px;
+            }
+
+            section {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul li a {
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.2rem;
+            }
+
+            section p {
+                font-size: 0.9rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our College</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a>
+                    <ul>
+                        <li><a href="#home-intro">Introduction</a></li>
+                        <li><a href="#home-news">Latest News</a></li>
+                    </ul>
+                </li>
+                <li><a href="it is founder in 1921 we have the almost 100 years of experince of this field ">About</a>
+                    <ul>
+                        <li><a href="#about-history">History</a></li>
+                        <li><a href="#about-team">Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="#academics">Academics</a>
+                    <ul>
+                        <li><a href="#undergraduate">Undergraduate Programs</a></li>
+                        <li><a href="#postgraduate">Postgraduate Programs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#admissions">Admissions</a>
+                    <ul>
+                        <li><a href="#apply">How to Apply</a></li>
+                        <li><a href="#fees">Tuition & Fees</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a>
+                    <ul>
+                        <li><a href="contactinfo.html">Contact Info</a></li>
+                        <li><a href="contact form2.html">Contact Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our college's official website. Explore the various sections to learn more about us.</p>
+            <article id="home-intro">
+                <h3>Introduction</h3>
+                <p>Our college offers a wide range of programs and services to help you achieve your academic goals.</p>
+            </article>
+            <article id="home-news">
+                <h3>Latest News</h3>
+                <p>Stay updated with the latest news and events happening at our college.</p>
+            </article>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Learn more about our college's history, mission, and the team behind our success.</p>
+            <article id="about-history">
+                <h3>History</h3>
+                <p>Our college was established in the year XXXX and has been dedicated to providing quality education since.</p>
+            </article>
+            <article id="about-team">
+                <h3>Team</h3>
+                <p>Meet our dedicated team of faculty and staff who are committed to helping you succeed.</p>
+            </article>
+        </section>
+        <section id="academics">
+            <h2>Academics</h2>
+            <p>Explore the academic programs we offer, ranging from undergraduate to postgraduate studies.</p>
+            <article id="undergraduate">
+                <h3>Undergraduate Programs</h3>
+                <p>We offer a variety of undergraduate programs to suit your interests and career goals.</p>
+                <label for="courses">course:</label>
+                <select id="couse" id="course">
+                    <option class="cse" value="cse"></option>
+                    <option value="eee">eee</option>
+                    <option value="mechanical">mechanical</option>
+                    <option value="other">other</option>
+                </select>
+            </article>
+            <article id="postgraduate">
+                <h3>Postgraduate Programs</h3>
+                <label for="courses">course:</label>
+                <select id="couse" id="course">
+                    <option class="cse" value="cse"></option>
+                    <option value="eee">eee</option>
+                    <option value="mechanical">mechanical</option>
+                    <option value="other">other</option>
+                </select>
+                <p>select the courses of your interests.</p>
+            </article>
+        </section>
+        <section id="admissions">
+            <h2>Admissions</h2>
+            <p>Find out how to apply to our college and learn about tuition and fees.</p>
+            <article id="apply">
+                <h3>How to Apply</h3>
+                <p>Follow our step-by-step guide to submit your application to our college.</p>
+            </article>
+            <article id="fees">
+                <h3>Tuition & Fees</h3>
+                <p>Learn about the tuition and fees for the programs we offer.</p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us through our contact information or by filling out the contact form.</p>
+            <article id="contact-info">
+                <h3>Contact Info</h3>
+                <p>Email: info@college.com<br>Phone: xyzzz<br>Address: 123 College St, City, Country</p>
+            </article>
+            <article id="contact-form">
+                <h3>Contact Form</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our College. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form Validation
+            const form = document.getElementById('contactForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+
+            form.addEventListener('submit', function(event) {
+                let valid = true;
+
+                // Name validation
+                if (nameInput.value.trim() === '') {
+                    showError('nameError', 'Name is required.');
+                    valid = false;
+                } else {
+                    hideError('nameError');
+                }
+
+                // Email validation
+                if (!validateEmail(emailInput.value.trim())) {
+                    showError('emailError', 'Valid email is required.');
+                    valid = false;
+                } else {
+                    hideError('emailError');
+                }
+
+                // Message validation
+                if (messageInput.value.trim() === '') {
+                    showError('messageError', 'Message is required.');
+                    valid = false;
+                } else {
+                    hideError('messageError');
+                }
+
+                if (!valid) {
+                    event.preventDefault();
+                }
+            });
+
+            function showError(id, message) {
+                const errorElement = document.getElementById(id);
+                errorElement.textContent = message;
+            }
+
+            function hideError(id) {
+                const errorElement = document.getElementById(id);
+                errorElement.textContent = '';
+            }
+
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            // Interactive Menus
+            const navItems = document.querySelectorAll('nav ul li');
+            navItems.forEach(item => {
+                item.addEventListener('mouseover', function() {
+                    const submenu = item.querySelector('ul');
+                    if (submenu) {
+                        submenu.style.display = 'block';
+                    }
+                });
+                item.addEventListener('mouseout', function() {
+                    const submenu = item.querySelector('ul');
+                    if (submenu) {
+                        submenu.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
